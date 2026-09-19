@@ -1,1 +1,106 @@
-# my-website
+# my-website<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f5f7ff;
+        }
+
+        nav {
+            background: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #5b4cff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding-top: 150px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        span {
+            color: #5b4cff;
+        }
+
+        button {
+            background: #5b4cff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #4034d6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">MyWebsite</div>
+        <div>Home | About | Contact</div>
+    </nav>
+
+    <div class="hero">
+        <h1>Hello, <span>World!</span></h1>
+
+        <p>Welcome to my website 🚀</p>
+
+        <button onclick="showOptions()">
+            Click Me
+        </button>
+    </div>
+
+    <script>
+        function showOptions() {
+
+            let choice = prompt(
+                "Choose an option:\n\n" +
+                "1 - Contact / Email\n" +
+                "2 - Fun Message"
+            );
+
+            if (choice === "1") {
+
+                alert("Contact / Email selected 📧");
+
+            }
+            else if (choice === "2") {
+
+                alert(
+                    "😂 FUN PEOPLE 😂\n\n" +
+                    "1. Keshav Dhakad 😎\n" +
+                    "2. Yogesh Dmaru 😂\n" +
+                    "3. Pooja Tuntun Mausi 😜\n" +
+                    "4. Krishna Papa Ki Pari 👑"
+                );
+
+            }
+            else {
+
+                alert("Please enter 1 or 2.");
+
+            }
+        }
+    </script>
+
+</body>
+</html>
