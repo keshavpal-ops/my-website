@@ -16,7 +16,7 @@
             padding: 20px;
             display: flex;
             justify-content: space-between;
-        }
+
 
         .logo {
             color: #5b4cff;
